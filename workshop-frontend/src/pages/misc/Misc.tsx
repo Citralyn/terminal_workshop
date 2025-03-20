@@ -17,7 +17,7 @@ export default function Home() {
         <Container className="bg-info text-center w-50 rounded shadow p-3">
             <h1>Miscellaneous</h1>
             <Row>
-            <Col><Button onClick={() => {goToPage("/misc/#/packages")}}>Package Management</Button></Col>
+            <Col><Button onClick={() => {goToPage("/misc/packages")}}>Package Management</Button></Col>
             <Col><Button onClick={() => {goToPage("/misc/commands")}}>Various Other Useful Commands</Button></Col>
             <Col><Button onClick={() => {goToPage("/misc/services")}}>Common Services</Button></Col>
             </Row>

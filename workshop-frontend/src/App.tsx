@@ -80,7 +80,9 @@ function App() {
             <Route path="root" element={<UserRoot />}></Route>
           </Route>
 
-          <Route path="/scripting" element={<Scripting/>}></Route>
+          <Route path="/scripting" element={<Layout/>}>
+            <Route index element={<Scripting />}></Route>
+          </Route>
           
           <Route path="/misc" element={<Layout />}>
             <Route index element={<Misc />}></Route>

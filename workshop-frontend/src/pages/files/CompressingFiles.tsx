@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router"
 import Button from "react-bootstrap/Button"
 import Container from "react-bootstrap/Container"
+import BackButton from "../../components/BackButton"
 
 export default function Home() {
     let navigateTo = useNavigate();
@@ -10,6 +11,7 @@ export default function Home() {
     }
     return(
         <>
+        <BackButton location={"/files"}></BackButton>
         <div style={{height: "30vh"}}></div>
         <Container className="bg-info text-center w-50 rounded shadow p-3">
             <h1>A Newbie's Guide to the Terminal</h1>

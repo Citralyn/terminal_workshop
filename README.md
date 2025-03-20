@@ -14,3 +14,9 @@ I needed to install the package gh-pages and add some scripts:
 On Github, under Pages,
 I selected Deploy from a branch for Source
 -> and then selected gh-pages (root) as my branch
+
+More updates
+-
+I have to use the HASH router for github pages routes,
+and I can access the routes with a #
+such as -> .com/main/#/about 

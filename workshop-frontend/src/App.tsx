@@ -45,22 +45,26 @@ function App() {
             <Route path="terminal_intro" element={<Terminal />}></Route>
           </Route>
 
-          <Route path="/files" element={<Files />}>
+          <Route path="/files" element={<Layout />}>
+            <Route index element={<Files />}></Route>
             <Route path="editing" element={<EditingFiles />}></Route>
             <Route path="searching" element={<SearchingFiles />}></Route>
             <Route path="compressing" element={<CompressingFiles />}></Route>
           </Route>
 
-          <Route path="/system" element={<System />}>
+          <Route path="/system" element={<Layout />}>
+            <Route index element={<System />}></Route>
             <Route path="information" element={<SystemInfo />}></Route>
             <Route path="storage" element={<SystemStorage />}></Route>
-            <Route path="processes" element={<SystemProcesses />}>
+            <Route path="processes" element={<Layout />}>
+              <Route index element={<SystemProcesses />}></Route>
               <Route path="common_processes" element={<CommonProcesses />}></Route>
               <Route path="cron_jobs" element={<CronJobs />}></Route>
             </Route>
           </Route>
 
-          <Route path="/networks" element={<Networks />}>
+          <Route path="/networks" element={<Layout />}>
+            <Route index element={<Networks />}></Route>
             <Route path="common_ports" element={<NetCommonPorts />}></Route>
             <Route path="common_protocols" element={<NetCommonProtocols />}></Route>
             <Route path="web" element={<NetWeb />}></Route>
@@ -69,7 +73,8 @@ function App() {
             <Route path="firewalls" element={<NetFirewalls />}></Route>
           </Route>
 
-          <Route path="/users" element={<Users />}>
+          <Route path="/users" element={<Layout />}>
+          <Route index element={<Users />}></Route>
             <Route path="basics" element={<UserBasics />}></Route>
             <Route path="permissions" element={<UserPermissions />}></Route>
             <Route path="root" element={<UserRoot />}></Route>
@@ -77,7 +82,8 @@ function App() {
 
           <Route path="/scripting" element={<Scripting/>}></Route>
           
-          <Route path="/misc" element={<Misc/>}>
+          <Route path="/misc" element={<Layout />}>
+            <Route index element={<Misc />}></Route>
             <Route path="packages" element={<MiscPackages />}></Route>
             <Route path="services" element={<MiscServices />}></Route>
             <Route path="commands" element={<MiscCommands />}></Route>

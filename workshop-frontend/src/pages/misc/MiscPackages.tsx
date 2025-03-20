@@ -12,7 +12,7 @@ export default function Home() {
         <>
         <div style={{height: "30vh"}}></div>
         <Container className="bg-info text-center w-50 rounded shadow p-3">
-            <h1>A Newbie's Guide to the Terminal</h1>
+            <h1>Packages</h1>
             <Button onClick={goToTerminalIntro}>What is the Terminal?</Button>
         </Container>
         <p className="text-center">//Here I introduce my workshop, explain
